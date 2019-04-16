@@ -2,25 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="250a9e8d-5e7c-45be-9bd8-c9dbc3683b29" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shumeipai.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shumeipai.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Face/Face_Expression.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FaceExpressionWidget.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Face/FaceRecongnition.py" beforeDir="false" afterPath="$PROJECT_DIR$/Face/FaceRecongnition.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Face/KZWProcess.py" beforeDir="false" afterPath="$PROJECT_DIR$/Face/KZWProcess.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FaceRecognitionWidget.py" beforeDir="false" afterPath="$PROJECT_DIR$/FaceRecognitionWidget.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MianWidget.py" beforeDir="false" afterPath="$PROJECT_DIR$/MianWidget.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data.db" beforeDir="false" afterPath="$PROJECT_DIR$/data.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/features_all.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/features_all.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/user.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/user.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/usercvs/康宝宝.csv" beforeDir="false" afterPath="$PROJECT_DIR$/usercvs/康宝宝.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userimg/康宝宝/img_face_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/userimg/康宝宝/img_face_1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userimg/康宝宝/img_face_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/userimg/康宝宝/img_face_2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userimg/康宝宝/img_face_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/userimg/康宝宝/img_face_3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userimg/康宝宝/img_face_4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/userimg/康宝宝/img_face_4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userimg/康宝宝/img_face_5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/userimg/康宝宝/img_face_5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userimg/康宝宝/img_face_6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomFaceTwoWidget.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomFaceTwoWidget.py" afterDir="false" />
     </list>
     <ignored path="shumeipai.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,12 +32,78 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Face/Face_Expression.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="328">
+              <caret line="112" column="64" selection-start-line="112" selection-start-column="64" selection-end-line="112" selection-end-column="64" />
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Face/FaceRecongnition.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="349">
+              <caret line="142" column="85" lean-forward="true" selection-start-line="141" selection-start-column="27" selection-end-line="142" selection-end-column="85" />
+              <folding>
+                <element signature="e#12#46#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="34" column="25" lean-forward="true" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FaceRecognitionWidget.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="39" column="74" selection-start-line="39" selection-start-column="74" selection-end-line="39" selection-end-column="74" />
+            <state relative-caret-position="140">
+              <caret line="103" column="79" lean-forward="true" selection-start-line="103" selection-start-column="10" selection-end-line="103" selection-end-column="79" />
               <folding>
                 <element signature="e#13#42#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FaceExpressionWidget.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-271">
+              <caret line="31" column="31" lean-forward="true" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
+              <folding>
+                <element signature="e#14#68#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2018.3/python_stubs/-1199943127/PyQt5/QtCore/Qt.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="111">
+              <caret line="311" column="19" selection-start-line="311" selection-start-column="4" selection-end-line="311" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CustomFaceTwoWidget.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="93" column="52" lean-forward="true" selection-start-line="93" selection-start-column="52" selection-end-line="93" selection-end-column="52" />
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -99,7 +150,6 @@
         <option value="$PROJECT_DIR$/Db/User.py" />
         <option value="$PROJECT_DIR$/FilesUtils.py" />
         <option value="$PROJECT_DIR$/Db/__init__.py" />
-        <option value="$PROJECT_DIR$/CustomFaceTwoWidget.py" />
         <option value="$PROJECT_DIR$/Face/FaceUtils.py" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/FaceThreeWiget.py" />
@@ -112,6 +162,9 @@
         <option value="$PROJECT_DIR$/MianWidget.py" />
         <option value="$PROJECT_DIR$/FaceRecognitionWidget.py" />
         <option value="$PROJECT_DIR$/Face/FaceRecongnition.py" />
+        <option value="$PROJECT_DIR$/CustomFaceTwoWidget.py" />
+        <option value="$PROJECT_DIR$/FaceExpressionWidget.py" />
+        <option value="$PROJECT_DIR$/Face/Face_Expression.py" />
       </list>
     </option>
   </component>
@@ -121,9 +174,9 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="160" />
-    <option name="y" value="23" />
-    <option name="width" value="1185" />
+    <option name="x" value="70" />
+    <option name="y" value="61" />
+    <option name="width" value="1256" />
     <option name="height" value="721" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -139,6 +192,11 @@
               <item name="shumeipai" type="b2602c69:ProjectViewProjectNode" />
               <item name="shumeipai" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="shumeipai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shumeipai" type="462c0819:PsiDirectoryNode" />
+              <item name="Face" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -153,11 +211,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Face" />
       <recent name="C:\Users\kzw\Desktop\shumeipai" />
       <recent name="$PROJECT_DIR$/data" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/image" />
-      <recent name="C:\Users\kzw\Desktop\shumeipai\font" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -278,7 +336,7 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <configuration name="MianWidget" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Face_Expression" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="shumeipai" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -286,12 +344,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Face" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MianWidget.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Face/Face_Expression.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -366,43 +424,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittest FaceRecognitionWidget.playProcess" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="shumeipai" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FaceRecognitionWidget.py" />
-      <option name="CLASS_NAME" value="FaceRecognitionWidget" />
-      <option name="METHOD_NAME" value="playProcess" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_METHOD" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="false" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <module name="shumeipai" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="_new_pattern" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_legacyInformationCopiedToNew" value="true" />
-      <option name="_new_target" value="&quot;&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittest FaceRecongnition.allForCSV" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for Face.FaceRecongnition.FaceRecongnition.allForCSV" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="shumeipai" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -436,6 +458,42 @@
       <option name="_new_legacyInformationCopiedToNew" value="true" />
       <option name="_new_target" value="&quot;Face.FaceRecongnition.FaceRecongnition.allForCSV&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in bin" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="shumeipai" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FaceRecognitionWidget.py" />
+      <option name="CLASS_NAME" value="FaceRecognitionWidget" />
+      <option name="METHOD_NAME" value="playProcess" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_METHOD" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <module name="shumeipai" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_legacyInformationCopiedToNew" value="true" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -505,19 +563,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.MianWidget" />
       <item itemvalue="Python.main" />
       <item itemvalue="Python.test" />
-      <item itemvalue="Python tests.Unittest FaceRecognitionWidget.playProcess" />
-      <item itemvalue="Python tests.Unittest FaceRecongnition.allForCSV" />
+      <item itemvalue="Python tests.Unittests in bin" />
+      <item itemvalue="Python tests.Unittests for Face.FaceRecongnition.FaceRecongnition.allForCSV" />
+      <item itemvalue="Python.Face_Expression" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
-        <item itemvalue="Python tests.Unittest FaceRecongnition.allForCSV" />
-        <item itemvalue="Python tests.Unittest FaceRecognitionWidget.playProcess" />
+        <item itemvalue="Python.Face_Expression" />
+        <item itemvalue="Python tests.Unittests for Face.FaceRecongnition.FaceRecongnition.allForCSV" />
+        <item itemvalue="Python tests.Unittests in bin" />
         <item itemvalue="Python.test" />
-        <item itemvalue="Python.MianWidget" />
       </list>
     </recent_temporary>
   </component>
@@ -543,15 +601,16 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-120" y="23" width="1280" height="721" extended-state="0" />
+    <frame x="-112" y="109" width="1256" height="721" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4941003" visible="true" weight="0.23272438" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4941003" visible="true" weight="0.23724696" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5058997" side_tool="true" weight="0.2419181" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3266745" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.23501763" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.24801272" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3990461" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -665,34 +724,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CustomFaceTwoWidget.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="88" column="23" selection-start-line="88" selection-start-column="23" selection-end-line="88" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="32" column="3" selection-start-line="32" selection-start-column="3" selection-end-line="32" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MianWidget.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
           <caret line="40" column="12" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Face/FaceRecongnition.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" column="14" selection-start-line="39" selection-end-line="40" />
-          <folding>
-            <element signature="e#12#46#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -717,12 +752,66 @@
     <entry file="file://$PROJECT_DIR$/data/features_all.csv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/CustomFaceTwoWidget.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="93" column="52" lean-forward="true" selection-start-line="93" selection-start-column="52" selection-end-line="93" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/FaceRecognitionWidget.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" column="74" selection-start-line="39" selection-start-column="74" selection-end-line="39" selection-end-column="74" />
+        <state relative-caret-position="140">
+          <caret line="103" column="79" lean-forward="true" selection-start-line="103" selection-start-column="10" selection-end-line="103" selection-end-column="79" />
           <folding>
             <element signature="e#13#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="34" column="25" lean-forward="true" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2018.3/python_stubs/-1199943127/PyQt5/QtCore/Qt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="311" column="19" selection-start-line="311" selection-start-column="4" selection-end-line="311" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Face/FaceRecongnition.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="142" column="85" lean-forward="true" selection-start-line="141" selection-start-column="27" selection-end-line="142" selection-end-column="85" />
+          <folding>
+            <element signature="e#12#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FaceExpressionWidget.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-271">
+          <caret line="31" column="31" lean-forward="true" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
+          <folding>
+            <element signature="e#14#68#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Face/Face_Expression.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="112" column="64" selection-start-line="112" selection-start-column="64" selection-end-line="112" selection-end-column="64" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -49,7 +49,7 @@ class CustomFaceTwoWidget(QWidget):
         # h1layout.setSpacing(space)
         vlayout.addLayout(h1layout)
         # h1btn0 = CustomFaceTwoButton()
-        titles = ["人脸录入","模型计算","人脸识别"];
+        titles = ["人脸录入","表情识别","人脸识别"];
         imgs = ["./image/erjiicon1.png","./image/erjiicon2.png","./image/erjiicon3.png"]
         bgColors = [(0,168,243),(181,235,16),(254,202,25)]
         for i in range(len(titles)):
@@ -90,8 +90,11 @@ class CustomFaceTwoWidget(QWidget):
             self.stack.addWidget(wg)
             self.stack.setCurrentWidget(wg)
         elif btn == 1:
-            # 模型计算的跳转
-            pass
+            #  表情识别的跳转
+            from FaceExpressionWidget import FaceExpressionWidget
+            wg = FaceExpressionWidget(stack=self.stack)
+            self.stack.addWidget(wg)
+            self.stack.setCurrentWidget(wg)
         elif btn == 2:
             # 人脸识别的跳转
             print("人脸识别的跳转")
