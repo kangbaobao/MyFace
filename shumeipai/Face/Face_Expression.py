@@ -48,7 +48,7 @@ class face_emotion(object):
                     # enumerate方法同时返回数据对象的索引和数据，k为索引，d为faces中的对象
                     for k, d in enumerate(faces):
                         # 用红色矩形框出人脸
-                        cv2.rectangle(im_rd, (d.left(), d.top()), (d.right(), d.bottom()), (255, 255, 255))
+                        cv2.rectangle(im_rd, (d.left(), d.top()), (d.right(), d.bottom()), (255, 255, 255),2)
                         # 计算人脸热别框边长
                         self.face_width = d.right() - d.left()
                         # 使用预测器得到68点数据的坐标
@@ -93,7 +93,7 @@ class face_emotion(object):
                         # 张嘴，可能是开心或者惊讶
                         if round(mouth_higth >= 0.03):
                             if eye_hight >= 0.041:
-                                im_rd = cv2ImgAddText(im_rd, "惊喜！" , d.left(),
+                                im_rd = cv2ImgAddText(im_rd, "惊呀！" , d.left(),
                                                       d.bottom() + 20, (255, 255, 255), 20)
                                 # cv2.putText(im_rd, "Amazing!", (d.left(), d.bottom() + 20), cv2.FONT_HERSHEY_SIMPLEX, 0.8,
                                 #             (0, 0, 255), 2, 4)

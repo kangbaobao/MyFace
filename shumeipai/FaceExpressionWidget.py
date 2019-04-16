@@ -4,20 +4,26 @@ from PyQt5.QtCore import QCoreApplication,Qt
 from PyQt5.QtGui import *
 # from PyQt5 import Qt
 from CustomFaceTwoWidget import bottomLayout
-from MyThread import Worker
+from MyThread import Worker,WorkerOne
 from Face.Face_Expression import face_emotion
 class FaceExpressionWidget(QWidget):
     def __init__(self,parent=None,stack=None):
         super().__init__(parent)
         self.stack = stack
         self.initUI()
+        self.initThread = WorkerOne(parent=self, time=1)
+        # 连接信号
+        self.initThread._signal.connect(self.asyncInit)  # 进程连接回传到GUI的事件
+        # 开始线程
+        self.initThread.start()
+
+    def asyncInit(self):
         self.mthread = Worker(parent=self, playFuc=self.play)
         self.recFace = face_emotion()
         # 打开摄像头
         self.recFace.openCap()
-        #开启线程
+        # 开启线程
         self.mthread.start()
-
     def play(self):
         # 读取数据
         self.recFace.whileShow()
@@ -38,7 +44,7 @@ class FaceExpressionWidget(QWidget):
         layout = QVBoxLayout()
         self.setLayout(layout)
         # 摄像头label
-        self.capLab = QLabel("")
+        self.capLab = QLabel("正在开启摄像头...")
         self.capLab.setStyleSheet("border-color:#aaaaaa;border-width:1px;border-style:solid;")
         layout.addWidget(self.capLab, 1)
         hlayout2 = bottomLayout(self.backhome, self.popnav)
