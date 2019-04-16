@@ -38,9 +38,10 @@ class MainWidget(QWidget):
         # self.setLayout(self.stack)
 
     def closeEvent(self, QCloseEvent):
-        from Face.KZWProcess import cPrcess
-        if cPrcess:
-            cPrcess.terminate()
+        pass
+        # from Face.KZWProcess import cPrcess
+        # if cPrcess:
+        #     cPrcess.terminate()
         print("closeEvent.....")
     def addCustomView(self):
         print("addCustomView...")

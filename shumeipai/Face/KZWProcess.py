@@ -42,7 +42,7 @@ def handlerProcess(qInput,qOutput):
     while True:
         # print("isRun: ",True)
         try:
-            ele = qInput.get(block=True, timeout=2)
+            ele = qInput.get(block=True, timeout=3)
             for i in range(len(features_known_arr)):
                 # 将某张人脸与存储的所有人脸数据进行比对
                 compare = return_euclidean_distance(ele, features_known_arr[i])

@@ -29,7 +29,7 @@ if __name__ == '__main__':
     w.show()
     print("zhu thread : ", QThread.currentThread())
     #开启多进程
-    runProcess()
+    # runProcess()
     # w.close().connect(customProcess.terminate())
 
     sys.exit(app.exec_())

@@ -37,7 +37,7 @@ class FaceRecognitionWidget(QWidget):
 
     def asyncInit(self):
         self.mthread = Worker(parent=self, playFuc=self.play)
-        self.mthread2 = Worker(parent=self, playFuc=self.play2,interval=2000)
+        self.mthread2 = Worker(parent=self, playFuc=self.play2,interval=2500)
         # from Face.InputFace import InputFace
         # self.recFace = InputFace(self.updateScroll,self.showImage)
 
