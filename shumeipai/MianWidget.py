@@ -72,7 +72,8 @@ class MainWidget(QWidget):
     def btnDown(self,x,btn):
         print("btnDown: ",btn)
         if btn == 0:
-            wg = CustomFaceTwoWidget(stack=self.stack)
+            from FaceExpressionWidget import FaceExpressionWidget
+            wg = FaceExpressionWidget(stack=self.stack)
             self.stack.addWidget(wg)
             # self.stack.setCurrentIndex(1)
             self.stack.setCurrentWidget(wg)

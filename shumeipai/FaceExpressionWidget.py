@@ -51,8 +51,8 @@ class FaceExpressionWidget(QWidget):
         layout.addLayout(hlayout2)
         self.capLab.setScaledContents(True)  # 让图片自适应label大小
         # self.setMaximumSize(self.stack.width(),self.stack.height())
-        self.capLab.setMaximumHeight(self.capLab.height())
-        self.capLab.setMaximumWidth(self.capLab.width())
+        # self.capLab.setMaximumHeight(self.capLab.height())
+        # self.capLab.setMaximumWidth(self.capLab.width())
         self.capLab.setScaledContents(True)
     #  返回到主页
     def backhome(self):
