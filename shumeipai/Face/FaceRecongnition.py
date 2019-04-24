@@ -127,17 +127,6 @@ class FaceRecongnition(object):
                     d = faces[k]
                     cv2.rectangle(img_rd, tuple([d.left(), d.top()]), tuple([d.right(), d.bottom()]),
                                       (0, 255, 255), 2)
-            #         #识别人脸计算
-            #         shape = self.predictor(img_rd, faces[k])
-            #         features_cap = self.facerec.compute_face_descriptor(img_rd, shape)
-            #         for recindex in range(len(self.recList)):
-            #             compare = return_euclidean_distance(features_cap, self.recList[recindex].data)
-            #             # print("i : ",i)
-            #             if compare == "same":  # 找到了相似脸
-            #                 self.img_rd = cv2ImgAddText(img_rd, self.recList[recindex].name, d.left(), faces[k].bottom()+5,  (0, 255, 255), 14)
-            #             else:
-            #                 self.img_rd = cv2ImgAddText(img_rd, DATAINITFACE, d.left(),
-            #                                         faces[k].bottom() + 5, (0, 255, 255), 14)
                     if len(self.knownlist)>k:
 
                         if self.knownlist[k] == DATAINITFACE or self.knownlist[k] == DATANOFACE or len(self.knownlist)<=1:

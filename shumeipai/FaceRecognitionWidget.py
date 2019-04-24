@@ -37,14 +37,11 @@ class FaceRecognitionWidget(QWidget):
 
     def asyncInit(self):
         self.mthread = Worker(parent=self, playFuc=self.play)
-        self.mthread2 = Worker(parent=self, playFuc=self.play2,interval=2500)
-        # from Face.InputFace import InputFace
-        # self.recFace = InputFace(self.updateScroll,self.showImage)
-
+        # self.mthread2 = Worker(parent=self, playFuc=self.play2,interval=2500)
         self.recFace = FaceRecongnition(self.updateScroll,self.rightTopStr)
         self.recFace.openCap()
         self.mthread.start()
-        self.mthread2.start()
+        # self.mthread2.start()
     def play2(self):
         # 读取数据
         self.recFace.Handler()
@@ -140,8 +137,8 @@ class FaceRecognitionWidget(QWidget):
         #     self.timer.stop()
         if self.mthread:
             self.mthread.working = False
-        if self.mthread2:
-            self.mthread2.working = False
+        # if self.mthread2:
+        #     self.mthread2.working = False
         if self.recFace:
             self.recFace.removeCap()
         self.stack.removeWidget(self)
@@ -154,8 +151,8 @@ class FaceRecognitionWidget(QWidget):
         #     self.timer.stop()
         if self.mthread:
             self.mthread.working = False
-        if self.mthread2:
-            self.mthread2.working = False
+        # if self.mthread2:
+        #     self.mthread2.working = False
         if self.recFace:
             self.recFace.removeCap()
         self.stack.removeWidget(self)
