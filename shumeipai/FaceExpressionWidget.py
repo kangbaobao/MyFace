@@ -11,7 +11,7 @@ class FaceExpressionWidget(QWidget):
         super().__init__(parent)
         self.stack = stack
         self.initUI()
-        self.initThread = WorkerOne(parent=self, time=1)
+        self.initThread = WorkerOne(parent=self, time=5)
         # 连接信号
         self.initThread._signal.connect(self.asyncInit)  # 进程连接回传到GUI的事件
         # 开始线程
@@ -38,7 +38,7 @@ class FaceExpressionWidget(QWidget):
         bytesPerline = 3*width;
         qImg = QImage(img.data, width, height, bytesPerline, QImage.Format_RGB888).rgbSwapped()
         img = QPixmap.fromImage(qImg)
-        img.scaled(self.capLab.size(), Qt.KeepAspectRatioByExpanding)#Qt.KeepAspectRatioByExpanding)
+        img.scaled(self.capLab.maximumSize(), Qt.KeepAspectRatioByExpanding)#Qt.KeepAspectRatioByExpanding)
         self.capLab.setPixmap(img)
     def initUI(self):
         layout = QVBoxLayout()
@@ -50,15 +50,17 @@ class FaceExpressionWidget(QWidget):
         hlayout2 = bottomLayout(self.backhome, self.popnav)
         layout.addLayout(hlayout2)
         self.capLab.setScaledContents(True)  # 让图片自适应label大小
-        self.setMaximumSize(self.stack.width(),self.stack.height())
-
+        # self.setMaximumSize(self.stack.width(),self.stack.height())
+        self.capLab.setMaximumHeight(self.capLab.height())
+        self.capLab.setMaximumWidth(self.capLab.width())
+        self.capLab.setScaledContents(True)
     #  返回到主页
     def backhome(self):
         print("backhome....")
         if self.mthread:
             self.mthread.working = False
-        # if self.recFace:
-        #     self.recFace.removeCap()
+        if self.recFace:
+            self.recFace.removeCap()
         self.stack.removeWidget(self)
         self.stack.setCurrentIndex(0)
 
@@ -67,6 +69,6 @@ class FaceExpressionWidget(QWidget):
         print("popnav....")
         if self.mthread:
             self.mthread.working = False
-        # if self.recFace:
-        #     self.recFace.removeCap()
+        if self.recFace:
+            self.recFace.removeCap()
         self.stack.removeWidget(self)

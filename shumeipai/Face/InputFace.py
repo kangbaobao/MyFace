@@ -43,6 +43,7 @@ class InputFace(object):
     #     关闭摄像头
     def removeCap(self):
         # self.colse = True
+
         # 释放摄像头
         self.cap.release()
         # 删除建立的窗口
@@ -99,6 +100,8 @@ class InputFace(object):
         if self.cap.isOpened():
             # 480 height * 640 width
             flag, img_rd = self.cap.read()
+            if img_rd is None:
+                return
             self.img_rd = img_rd
             # cv2.waitKey(1000)
             # print("while..........")

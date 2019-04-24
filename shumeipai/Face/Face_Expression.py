@@ -16,9 +16,11 @@ class face_emotion(object):
     #打开摄像头
     def openCap(self):
         # 建cv2摄像头对象，这里使用电脑自带摄像头，如果接了外部摄像头，则自动切换到外部摄像头
-        self.cap = cv2.VideoCapture(0)
+        self.cap = cv2.VideoCapture()
+        self.cap.open(0)
         # 设置视频参数，propId设置的视频参数，value设置的参数值
         self.cap.set(3, 480)
+
     #外部线程调用
     def whileShow(self):
         # 眉毛直线拟合数据缓冲
@@ -32,6 +34,8 @@ class face_emotion(object):
             #    一个布尔值true/false，用来判断读取视频是否成功/是否到视频末尾
             #    图像对象，图像的三维矩阵
             flag, im_rd = self.cap.read()
+            if im_rd is None:
+                return
             # 每帧数据延时1ms，延时为0读取的是静态帧
             k = cv2.waitKey(1)
             # 取灰度

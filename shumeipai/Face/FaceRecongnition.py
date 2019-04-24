@@ -112,6 +112,8 @@ class FaceRecongnition(object):
         # print("whileShow :",QThread.currentThread());
         if self.cap.isOpened():
             flag, img_rd = self.cap.read()
+            if img_rd is None:
+                return
             self.img_rd = img_rd
             # 取灰度
             img_gray = cv2.cvtColor(img_rd, cv2.COLOR_RGB2GRAY)
