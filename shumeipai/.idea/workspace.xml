@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="250a9e8d-5e7c-45be-9bd8-c9dbc3683b29" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Face/FaceRecongnition.py" beforeDir="false" afterPath="$PROJECT_DIR$/Face/FaceRecongnition.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FaceRecognitionWidget.py" beforeDir="false" afterPath="$PROJECT_DIR$/FaceRecognitionWidget.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Face/Face_Expression.py" beforeDir="false" afterPath="$PROJECT_DIR$/Face/Face_Expression.py" afterDir="false" />
     </list>
     <ignored path="shumeipai.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,8 +31,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Face/Face_Expression.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="37" selection-end-column="22" />
+            <state relative-caret-position="2078">
+              <caret line="124" column="24" lean-forward="true" selection-start-line="124" selection-start-column="24" selection-end-line="124" selection-end-column="24" />
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
               </folding>
@@ -41,7 +40,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Face/FaceRecongnition.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="49">
@@ -65,8 +64,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FaceRecognitionWidget.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1752">
-              <caret line="40" column="13" lean-forward="true" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+            <state relative-caret-position="-15">
+              <caret line="83" column="20" selection-start-line="83" selection-start-column="13" selection-end-line="83" selection-end-column="20" />
               <folding>
                 <element signature="e#13#42#0" expanded="true" />
               </folding>
@@ -74,11 +73,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/FaceExpressionWidget.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1241">
-              <caret line="73" column="37" selection-start-line="73" selection-start-column="36" selection-end-line="73" selection-end-column="37" />
+            <state relative-caret-position="586">
+              <caret line="42" column="14" lean-forward="true" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
               <folding>
                 <element signature="e#14#68#0" expanded="true" />
               </folding>
@@ -156,10 +155,10 @@
         <option value="$PROJECT_DIR$/MianWidget.py" />
         <option value="$PROJECT_DIR$/CustomFaceTwoWidget.py" />
         <option value="$PROJECT_DIR$/FaceExpressionWidget.py" />
-        <option value="$PROJECT_DIR$/Face/Face_Expression.py" />
         <option value="$PROJECT_DIR$/Face/InputFace.py" />
         <option value="$PROJECT_DIR$/FaceRecognitionWidget.py" />
         <option value="$PROJECT_DIR$/Face/FaceRecongnition.py" />
+        <option value="$PROJECT_DIR$/Face/Face_Expression.py" />
       </list>
     </option>
   </component>
@@ -169,6 +168,7 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="69" />
     <option name="y" value="23" />
     <option name="width" value="1248" />
     <option name="height" value="694" />
@@ -595,15 +595,15 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1248" height="694" extended-state="0" />
+    <frame x="69" y="23" width="1248" height="694" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4941003" visible="true" weight="0.20374899" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4941003" visible="true" weight="0.19804402" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5058997" side_tool="true" weight="0.2419181" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3266745" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.29734218" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.1578073" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39864865" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -780,16 +780,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Face/Face_Expression.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="37" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="121">
@@ -804,32 +794,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FaceExpressionWidget.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1241">
-          <caret line="73" column="37" selection-start-line="73" selection-start-column="36" selection-end-line="73" selection-end-column="37" />
-          <folding>
-            <element signature="e#14#68#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FaceRecognitionWidget.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1752">
-          <caret line="40" column="13" lean-forward="true" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
-          <folding>
-            <element signature="e#13#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Face/FaceRecongnition.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="49">
           <caret line="128" column="55" selection-start-line="128" selection-start-column="55" selection-end-line="128" selection-end-column="55" />
           <folding>
             <element signature="e#12#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Face/Face_Expression.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2078">
+          <caret line="124" column="24" lean-forward="true" selection-start-line="124" selection-start-column="24" selection-end-line="124" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FaceRecognitionWidget.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-15">
+          <caret line="83" column="20" selection-start-line="83" selection-start-column="13" selection-end-line="83" selection-end-column="20" />
+          <folding>
+            <element signature="e#13#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FaceExpressionWidget.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="586">
+          <caret line="42" column="14" lean-forward="true" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
+          <folding>
+            <element signature="e#14#68#0" expanded="true" />
           </folding>
         </state>
       </provider>

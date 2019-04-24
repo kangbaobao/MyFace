@@ -57,14 +57,14 @@ class face_emotion(object):
                         self.face_width = d.right() - d.left()
                         # 使用预测器得到68点数据的坐标
                         shape = self.predictor(im_rd, d)
-                        # 圆圈显示每个特征点
-                        for i in range(68):
-                            cv2.circle(im_rd, (shape.part(i).x, shape.part(i).y), 2, (0, 255, 0), -1, 8)
-                            # cv2.putText(im_rd, str(i), (shape.part(i).x, shape.part(i).y), cv2.FONT_HERSHEY_SIMPLEX, 0.5,
-                            #            (255, 255, 255))
+                        # # 圆圈显示每个特征点
+                        # for i in range(68):
+                        #     cv2.circle(im_rd, (shape.part(i).x, shape.part(i).y), 2, (0, 255, 0), -1, 8)
+                        #     # cv2.putText(im_rd, str(i), (shape.part(i).x, shape.part(i).y), cv2.FONT_HERSHEY_SIMPLEX, 0.5,
+                        #     #            (255, 255, 255))
 
                         # 分析任意n点的位置关系来作为表情识别的依据
-                        mouth_width = (shape.part(54).x - shape.part(48).x) / self.face_width  # 嘴巴咧开程度
+                        # mouth_width = (shape.part(54).x - shape.part(48).x) / self.face_width  # 嘴巴咧开程度
                         mouth_higth = (shape.part(66).y - shape.part(62).y) / self.face_width  # 嘴巴张开程度
                         # print("嘴巴宽度与识别框宽度之比：",mouth_width_arv)
                         # print("嘴巴高度与识别框高度之比：",mouth_higth_arv)
@@ -83,8 +83,8 @@ class face_emotion(object):
                         z1 = np.polyfit(tempx, tempy, 1)  # 拟合成一次直线
                         self.brow_k = -round(z1[0], 3)  # 拟合出曲线的斜率和实际眉毛的倾斜方向是相反的
 
-                        brow_hight = (brow_sum / 10) / self.face_width  # 眉毛高度占比
-                        brow_width = (frown_sum / 5) / self.face_width  # 眉毛距离占比
+                        # brow_hight = (brow_sum / 10) / self.face_width  # 眉毛高度占比
+                        # brow_width = (frown_sum / 5) / self.face_width  # 眉毛距离占比
                         # print("眉毛高度与识别框高度之比：",round(brow_arv/self.face_width,3))
                         # print("眉毛间距与识别框高度之比：",round(frown_arv/self.face_width,3))
 
@@ -99,53 +99,28 @@ class face_emotion(object):
                             if eye_hight >= 0.041:
                                 im_rd = cv2ImgAddText(im_rd, "惊呀！" , d.left(),
                                                       d.bottom() + 20, (255, 255, 255), 20)
-                                # cv2.putText(im_rd, "Amazing!", (d.left(), d.bottom() + 20), cv2.FONT_HERSHEY_SIMPLEX, 0.8,
-                                #             (0, 0, 255), 2, 4)
                             else:
                                 im_rd = cv2ImgAddText(im_rd, "快乐！", d.left(),
                                                       d.bottom() + 20, (255, 255, 255), 20)
-                                # cv2.putText(im_rd, "HAPPY!", (d.left(), d.bottom() + 20), cv2.FONT_HERSHEY_SIMPLEX, 0.8,
-                                #             (0, 0, 255), 2, 4)
                         # 没有张嘴，可能是正常和生气
                         else:
                             if self.brow_k <= -0.22:
                                 im_rd = cv2ImgAddText(im_rd, "生气", d.left(),
                                                       d.bottom() + 20, (255, 255, 255), 20)
-                                # cv2.putText(im_rd, "Angry", (d.left(), d.bottom() + 20), cv2.FONT_HERSHEY_SIMPLEX, 0.8,
-                                #             (0, 0, 255), 2, 4)
                             else:
                                 im_rd = cv2ImgAddText(im_rd, "自然", d.left(),
                                                       d.bottom() + 20, (255, 255, 255), 20)
-                                # cv2.putText(im_rd, "Nature", (d.left(), d.bottom() + 20), cv2.FONT_HERSHEY_SIMPLEX, 0.8,
-                                #             (0, 0, 255), 2, 4)
 
                 # 标出人脸数
                 im_rd = cv2ImgAddText(im_rd, "人脸数: "+str(len(faces)), 20,
                                        50, (255, 255, 255), 20)
-                # cv2.putText(im_rd, "Face Num: "+str(len(faces)), (20,50), font, 1, (0, 0, 255), 1, cv2.LINE_AA)
             else:
                 # 没有检测到人脸
                 im_rd = cv2ImgAddText(im_rd, "没检测到人脸" , 20,
                                       50, (255, 255, 255), 20)
-                # cv2.putText(im_rd, "No Face", (20, 50), font, 1, (0, 0, 255), 1, cv2.LINE_AA)
-            # 添加说明
-            # im_rd = cv2.putText(im_rd, "S: screenshot", (20, 400), font, 0.8, (0, 0, 255), 1, cv2.LINE_AA)
-            # im_rd = cv2.putText(im_rd, "Q: quit", (20, 450), font, 0.8, (0, 0, 255), 1, cv2.LINE_AA)
-            # # 按下s键截图保存
-            # if cv2.waitKey(1) == (ord('s')):
-            #     self.cnt+=1
-            #     cv2.imwrite(".\screenshoot\screenshoot"+str(self.cnt)+".jpg", im_rd)
-            # # 按下q键退出
-            # if cv2.waitKey(1) == (ord('q')):
-            #     break
             # # 窗口显示
             # cv2.imshow("camera", im_rd)
             self.img_rd = im_rd
-
-        # # 释放摄像头
-        # self.cap.release()
-        # # 删除建立的窗口
-        # cv2.destroyAllWindows()
 
     def removeCap(self):
         # self.colse = True
