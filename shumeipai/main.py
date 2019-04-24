@@ -16,6 +16,7 @@ if __name__ == '__main__':
     screen = QDesktopWidget().screenGeometry()
     print("screen width:",screen.width())
     print("screen height:",screen.height())
+
     # 创建保存用户数据的文件夹
     pre_work_mkdir(path_photos_from_camera)
     pre_work_mkdir(path_csv_from_photos)
@@ -26,6 +27,8 @@ if __name__ == '__main__':
     # for i in range(len(csv_rd)):
     #     print(csv_rd[i])
     w = MainWidget()
+    w.setGeometry(0, 0, screen.width(), screen.height())
+
     w.show()
     print("zhu thread : ", QThread.currentThread())
     #开启多进程

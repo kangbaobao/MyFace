@@ -10,7 +10,7 @@ class MainWidget(QWidget):
     def __init__(self,parent=None):
         super().__init__(parent)
         self.setWindowTitle("我是个窗口")
-        self.setGeometry(0,0,1024,600)
+        # self.setGeometry(0,0,1024,600)
         self.customLayout = QGridLayout();
         self.customLayout.setContentsMargins(QMargins(8,8,8,8))
 
