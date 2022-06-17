@@ -83,7 +83,7 @@ redis==2.10.6
 requests==2.19.1
 scikit-image==0.15.0
 scipy==1.2.1
-Scrapy==1.5.0
+Scrapy==2.6.1
 Send2Trash==1.5.0
 service-identity==17.0.0
 simplegeneric==0.8.1
